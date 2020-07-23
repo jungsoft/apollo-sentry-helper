@@ -22,7 +22,7 @@ export interface buildSentryErrorLinkOptions {
   /**
    * Filters if the error should be reported to Sentry.
    */
-  filter: (error: ErrorResponse) => boolean;
+  filter?: (error: ErrorResponse) => boolean;
 }
 
 export interface getOperationDataOptions {
