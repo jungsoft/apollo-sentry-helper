@@ -52,5 +52,9 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "apollo",
+    "sentry"
   ]
 }
