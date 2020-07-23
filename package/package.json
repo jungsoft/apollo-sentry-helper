@@ -1,6 +1,6 @@
 {
   "name": "apollo-sentry-helper",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Capture your Apollo GraphQL exceptions into Sentry, in a meaningful way.",
   "author": "Pedro Bini @ Jungsoft",
   "license": "MIT",
@@ -22,7 +22,9 @@
     "copy_publish_files": "cp ../README.md .",
     "prepublish": "yarn run build && yarn run copy_publish_files"
   },
-  "dependencies": {},
+  "dependencies": {
+    "merge": "^1.2.1"
+  },
   "peerDependencies": {
     "@sentry/browser": "^5.20.0",
     "apollo-link-error": "^1.1.13"

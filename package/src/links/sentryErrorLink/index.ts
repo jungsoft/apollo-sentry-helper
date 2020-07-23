@@ -1,8 +1,9 @@
 import { onError } from 'apollo-link-error';
+import merge from 'merge';
 
 import { buildSentryErrorLinkOptions } from '../../interfaces';
 import captureSentryException from './captureSentryException';
-import defaultErrorFilter from './defaultErrorFilter';
+import defaultOptions from './defaultOptions';
 
 /**
  * The error link that connects apollo-link-error with Sentry.
@@ -16,22 +17,21 @@ import defaultErrorFilter from './defaultErrorFilter';
  * the operation hasn't returned any data, meaning that the server processed the request,
  * but it was invalid. You can override this behavior by setting the "filter" option.
  */
-const buildSentryErrorLink = ({
-  filter = defaultErrorFilter,
-  includeVariables = true,
-  includeResponse = true,
-  includeBody = true,
-}: buildSentryErrorLinkOptions) => onError((error) => {
-  const isValid = filter(error);
+const buildSentryErrorLink = (
+  options?: buildSentryErrorLinkOptions,
+) => onError((error) => {
+  const linkOptions = merge(defaultOptions, options);
+
+  const isValid = linkOptions.filter(error);
 
   if (!isValid) {
     return;
   }
 
   const exceptionData = {
-    includeVariables,
-    includeResponse,
-    includeBody,
+    includeVariables: linkOptions.includeVariables,
+    includeResponse: linkOptions.includeResponse,
+    includeBody: linkOptions.includeBody,
     error,
   };
 
