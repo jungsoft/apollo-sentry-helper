@@ -13,6 +13,7 @@ const captureSentryException = ({
   includeResponse,
   includeBody,
   extras,
+  title,
   error,
 }: captureSentryExceptionOptions) => {
   Sentry.withScope((scope: Sentry.Scope) => {
@@ -40,12 +41,13 @@ const captureSentryException = ({
       });
     }
 
-    const errorMessage = (
-      error?.graphQLErrors?.[0]?.message
-      || error?.networkError?.message
-    );
+    let errorTitle = 'GraphQL Error';
 
-    Sentry.captureException(new Error(`GraphQL Error: ${errorMessage}`));
+    if (title) {
+      errorTitle += `: ${title}`;
+    }
+
+    Sentry.captureException(new Error(errorTitle));
   });
 };
 

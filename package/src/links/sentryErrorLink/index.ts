@@ -38,6 +38,7 @@ const buildSentryErrorLink = (
   if (error?.networkError) {
     captureSentryException({
       ...exceptionData,
+      title: error?.networkError?.message,
       extras: [
         {
           key: 'networkError',
@@ -57,6 +58,7 @@ const buildSentryErrorLink = (
     graphQLErrors.forEach((graphQLError) => {
       captureSentryException({
         ...exceptionData,
+        title: graphQLError?.message,
         extras: [
           {
             key: 'graphQLError',

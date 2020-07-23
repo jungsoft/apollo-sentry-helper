@@ -43,6 +43,7 @@ export interface ExceptionExtraInformation {
 export interface captureSentryExceptionOptions {
   extras: Array<ExceptionExtraInformation>;
   error: ErrorResponse;
+  title?: string;
   includeVariables: boolean;
   includeResponse: boolean;
   includeBody: boolean;
