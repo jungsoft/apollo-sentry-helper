@@ -1,4 +1,4 @@
-import * as Sentry from '@sentry/browser';
+import * as Sentry from '@sentry/minimal';
 
 import { captureSentryExceptionOptions } from '../../interfaces';
 import getOperationData from './getOperationData';
@@ -16,7 +16,7 @@ const captureSentryException = ({
   title,
   error,
 }: captureSentryExceptionOptions) => {
-  Sentry.withScope((scope: Sentry.Scope) => {
+  Sentry.withScope((scope) => {
     if (error?.operation) {
       const operationData = getOperationData({
         includeVariables,
