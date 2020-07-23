@@ -1,0 +1,49 @@
+{
+  "name": "apollo-sentry-helper",
+  "version": "1.0.0",
+  "description": "Capture your Apollo GraphQL exceptions into Sentry, in a meaningful way.",
+  "author": "Pedro Bini @ Jungsoft",
+  "license": "MIT",
+  "repository": "jungsoft/apollo-sentry-helper",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint ./src --ext .js,.ts",
+    "prebuild": "yarn run lint",
+    "build": "rollup -c",
+    "prepublish": "yarn run build"
+  },
+  "dependencies": {
+    "merge": "^1.2.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/parser": "^3.7.0",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "gh-pages": "^1.2.0",
+    "rollup": "^0.62.0",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-typescript2": "^0.17.0",
+    "rollup-plugin-url": "^1.4.0",
+    "scheduler": "0.18.0",
+    "typescript": "^3.7.5"
+  },
+  "files": [
+    "dist"
+  ]
+}
