@@ -7,12 +7,12 @@ module.exports = {
     'airbnb-base',
   ],
   settings: {
-    "import/resolver": {
+    'import/resolver': {
       node: {
-        paths: ["src"],
+        paths: ['src'],
         extensions: [
-          ".js",
-          ".ts",
+          '.js',
+          '.ts',
         ],
       },
     },
@@ -26,7 +26,10 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
-    "no-multiple-empty-lines": [2, { max: 1 }],
-    "import/extensions": 0,
+    'no-multiple-empty-lines': [2, { max: 1 }],
+    quotes: ['error', 'single'],
+    'import/extensions': 0,
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': ['error'],
   },
 };
