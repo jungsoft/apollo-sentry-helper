@@ -37,8 +37,8 @@ const sentryErrorLink = buildSentryErrorLink();
 const client = new ApolloClient({
   cache: new InMemoryCache(),
   link: ApolloLink.from([
-    // Other links here
     sentryErrorLink,
+    // Other links here
   ]),
 });
 ```
