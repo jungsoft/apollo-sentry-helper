@@ -14,14 +14,28 @@ This package provides a new link to connect Sentry with Apollo Client, in order 
 
 ## Installation
 
-With NPM
+⚠️ **Attention!** Currently, there are two tags on the NPM package: `latest` and `next`.
+
+- `latest`: Uses `apollo-link-error`, is compatible with **Apollo Client 2**.
+- `next`: Uses `@apollo/client/link/error`, is compatible with **Apollo Client 3**.
+
+### Apollo Client 3
+
+```bash
+# With npm
+npm install apollo-sentry-helper@next
+
+# With yarn
+yarn add apollo-sentry-helper@next
 ```
+
+### Apollo Client 2
+
+```bash
+# With npm
 npm install apollo-sentry-helper
-```
 
-With Yarn
-
-```
+# With yarn
 yarn add apollo-sentry-helper
 ```
 
