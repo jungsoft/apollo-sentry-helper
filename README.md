@@ -44,16 +44,27 @@ yarn add apollo-sentry-helper
 Initialize Sentry as you would normally. Then, build the error link with your settings and add it to your Apollo Client's `link` array:
 
 ```jsx
+import {
+  ApolloLink,
+  ApolloClient,
+  InMemoryCache,
+  createHttpLink,
+} from "@apollo/client";
 import { buildSentryErrorLink } from "apollo-sentry-helper";
+
+const httpLink = createHttpLink({ uri: "API_URI_HERE" });
 
 const sentryErrorLink = buildSentryErrorLink();
 
+const link = ApolloLink.from([
+  sentryErrorLink, // This needs to be before your httpLink!
+  // Other links here
+  httpLink,
+]);
+
 const client = new ApolloClient({
   cache: new InMemoryCache(),
-  link: ApolloLink.from([
-    sentryErrorLink,
-    // Other links here
-  ]),
+  link,
 });
 ```
 
