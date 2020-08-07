@@ -1,10 +1,11 @@
 <img src="https://jungsoft.io/static/media/jungsoft_logo.c44eaf52.png" width="300px"/>
 
-[![NPM](https://img.shields.io/npm/v/apollo-sentry-helper.svg?style=flat-square)](https://www.npmjs.com/jungsoft/apollo-sentry-helper)
-[![Languages](https://img.shields.io/github/languages/count/jungsoft/apollo-sentry-helper?style=flat-square)](#)
+[![NPM](https://img.shields.io/npm/v/apollo-sentry-helper.svg?style=flat-square)](https://www.npmjs.com/package/apollo-sentry-helper)
 [![Stars](https://img.shields.io/github/stars/jungsoft/apollo-sentry-helper?style=flat-square)](https://github.com/jungsoft/apollo-sentry-helper/stargazers)
+[![Issues](https://img.shields.io/github/issues/jungsoft/apollo-sentry-helper?style=flat-square)](https://github.com/jungsoft/apollo-sentry-helper/issues)
 [![Forks](https://img.shields.io/github/forks/jungsoft/apollo-sentry-helper?style=flat-square)](https://github.com/jungsoft/apollo-sentry-helper/network/members)
 [![Contributors](https://img.shields.io/github/contributors/jungsoft/apollo-sentry-helper?style=flat-square)](https://github.com/jungsoft/apollo-sentry-helper/graphs/contributors)
+[![Languages](https://img.shields.io/github/languages/count/jungsoft/apollo-sentry-helper?style=flat-square)](#)
 
 > ⚠️ Capture your Apollo GraphQL exceptions into Sentry, in a meaningful way.
 
