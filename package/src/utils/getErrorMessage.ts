@@ -1,4 +1,4 @@
-import { ErrorResponse } from 'apollo-link-error';
+import { ErrorResponse } from '@apollo/client/link/error';
 
 import getErrorsList from './getErrorsList';
 
