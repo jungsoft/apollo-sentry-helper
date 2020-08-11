@@ -45,7 +45,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-typescript2": "^0.17.0",
     "rollup-plugin-url": "^1.4.0",
-    "scheduler": "0.18.0",
+    "scheduler": "0.19.1",
     "typescript": "^3.7.5"
   },
   "files": [
