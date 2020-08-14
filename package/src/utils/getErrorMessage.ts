@@ -1,3 +1,4 @@
+import { ApolloError } from '@apollo/client';
 import { ErrorResponse } from '@apollo/client/link/error';
 
 import getErrorsList from './getErrorsList';
@@ -7,7 +8,7 @@ import getErrorsList from './getErrorsList';
  * @param error The query error.
  */
 const getErrorMessage = (
-  error: ErrorResponse,
+  error: ErrorResponse | ApolloError,
 ) => {
   const errors = getErrorsList(error);
 
