@@ -1,4 +1,4 @@
-import { ErrorResponse } from '@apollo/client/link/error';
+import { ErrorResponse } from 'apollo-link-error';
 
 /**
  * Sanitizes a query error, returning a list of errors to be displayed.

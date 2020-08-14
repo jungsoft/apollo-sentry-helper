@@ -1,4 +1,4 @@
-import { onError } from '@apollo/client/link/error';
+import { onError } from 'apollo-link-error';
 import merge from 'merge';
 
 import { buildSentryErrorLinkOptions } from '../../interfaces';
@@ -6,7 +6,7 @@ import captureSentryException from './captureSentryException';
 import defaultOptions from './defaultOptions';
 
 /**
- * The error link that connects @apollo/client/link/error with Sentry.
+ * The error link that connects apollo-link-error with Sentry.
  *
  * This link will report GraphQL errors to Sentry, according to the settings mentioned.
  *
