@@ -47,7 +47,7 @@
     "rollup-plugin-typescript2": "0.18.1",
     "rollup-plugin-url": "1.4.0",
     "scheduler": "0.19.1",
-    "typescript": "^3.7.5"
+    "typescript": "^4.0.2"
   },
   "files": [
     "dist"
