@@ -1,4 +1,4 @@
-<img src="https://jungsoft.io/static/media/jungsoft_logo.c44eaf52.png" width="300px"/>
+<img src="jungsoft_logo.png" width="300px"/>
 
 [![NPM](https://img.shields.io/npm/v/apollo-sentry-helper.svg?style=flat-square)](https://www.npmjs.com/package/apollo-sentry-helper)
 [![Stars](https://img.shields.io/github/stars/jungsoft/apollo-sentry-helper?style=flat-square)](https://github.com/jungsoft/apollo-sentry-helper/stargazers)
