@@ -1469,7 +1469,7 @@ micromatch@^2.3.11:
     parse-glob "^3.0.4"
     regex-cache "^0.4.2"
 
-mime@^2.3.1:
+mime@^2.4.4:
   version "2.4.6"
   resolved "https://registry.yarnpkg.com/mime/-/mime-2.4.6.tgz#e5b407c90db442f2beb5b162373d07b69affa4d1"
   integrity sha512-RZKhC3EmpBchfTGBVb8fb+RL2cWyw/32lshnsETttkBAyAUXSGHxbEJWWRXc751DrIxG1q04b8QwMbAwkRPpUA==
@@ -1932,13 +1932,13 @@ rollup-plugin-typescript2@0.18.1:
     rollup-pluginutils "2.3.3"
     tslib "1.9.3"
 
-rollup-plugin-url@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-url/-/rollup-plugin-url-1.4.0.tgz#346124cad853267b324cba0991f10bfd4be60c65"
-  integrity sha512-e5gXCLwUd7UQ/aVRJb/K8GNgOYHjqIOVGukhhdZVMuTHPslMJIFkiTVjvPbwwS/5SLbMGjfS0219ur5tmhMD0w==
+rollup-plugin-url@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-url/-/rollup-plugin-url-3.0.1.tgz#6362fd31d7ce6d078dc5adffbd844f080de61bd7"
+  integrity sha512-fQVrxlW335snHfPqZ7a0JIkkYEIrLeFobpAxRMQnyv7xQeJOY1yOd84STIdCaLYPoGzwOq8waOdGipNH181kzg==
   dependencies:
-    mime "^2.3.1"
-    rollup-pluginutils "^2.0.1"
+    mime "^2.4.4"
+    rollup-pluginutils "^2.8.2"
 
 rollup-pluginutils@2.3.3:
   version "2.3.3"
@@ -1956,7 +1956,7 @@ rollup-pluginutils@^1.5.0:
     estree-walker "^0.2.1"
     minimatch "^3.0.2"
 
-rollup-pluginutils@^2.0.1, rollup-pluginutils@^2.6.0:
+rollup-pluginutils@^2.6.0, rollup-pluginutils@^2.8.2:
   version "2.8.2"
   resolved "https://registry.yarnpkg.com/rollup-pluginutils/-/rollup-pluginutils-2.8.2.tgz#72f2af0748b592364dbd3389e600e5a9444a351e"
   integrity sha512-EEp9NhnUkwY8aif6bxgovPHMoMoNr2FulJziTndpt5H9RdwC47GSGuII9XxpSdzVGM0GWrNPHV6ie1LTNJPaLQ==
